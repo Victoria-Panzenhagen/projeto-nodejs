@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1> Lista de Endereços </h1>
+        <table id="enderecos">
+                <tr>
+                    <td>ID</td>
+                    <td>RUA</td>
+                    <td>NUM</td>                    
+                    <td>COMPL</td>
+                    <td>BAIRRO</td>
+                    <td>ALUNO_ID</td>
+                </tr>
+                <tr id="endereco_${endereco.id}" for (endereco in data.enderecos)>
+                    <td>${endereco.id}</td>
+                    <td>${endereco.rua}</td>
+                    <td>${endereco.num}</td>
+                    <td>${endereco.compl}</td>
+                    <td>${endereco.bairro}</td>
+                    <td>${endereco.aluno_ID}</td>
+                    <td><a href="alunos/endereco">Editar</a></td>                   
+                </tr>
+                
+        </table> 
+    </body> 
+</html>

@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1> Media dos Alunos </h1>
+        <table id="alunos">
+                <tr>
+                    <td>ID</td>
+                    <td>NOME</td>
+                    <td>DATA_NASC</td>                    
+                    <td>CPF</td>
+                    <td>NOTA</td>
+                
+                </tr>
+                
+                <tr id="aluno_${aluno.id}" for (aluno in data.alunos)>
+                    <td>${aluno.id}</td>
+                    <td>${aluno.nome}</td>
+                    <td>${aluno.data_nasc}</td>
+                    <td>${aluno.cpf}</td>
+                    <td>${aluno.nota}</td>
+                    
+                </tr>
+        </table> 
+    </body> 
+</html>
+
+            

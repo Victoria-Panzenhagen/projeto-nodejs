@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <h1>Endereço do Aluno</h1>
+
+        <form action="/endereco" method="post">
+
+            <div if(data.endereco.id)>
+                <input type="hidden" name="_method" value="PUT">
+                <input type="hidden" id="id" name="id" value="${data.endereco.id}"/>
+            </div>
+
+            <div>
+                <label for="rua">RUA:</label>
+                <input type="text" id="rua" name="rua" value="${data.endereco.rua}"/>
+            </div>
+            <div>
+                <label for="num">NUM:</label>
+                <input type="text" id="num" name="num" value="${data.endereco.num}"/>
+            </div>
+            <div>
+                <label for="compl">COMPL:</label>
+                <input type="text" id="compl" name="compl" value="${data.endereco.compl}"/>
+            </div>
+            <div>
+                <label for="bairro">BAIRRO:</label>
+                <input type="text" id="bairro" name="bairro" value="${data.endereco.bairro}"/>
+            </div>
+
+            <input type="submit" value="Salvar" />
+        </form>
+    </body>
+</html>
